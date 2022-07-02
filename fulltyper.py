@@ -1,9 +1,6 @@
 import ctypes
 from ctypes import wintypes
 import time
-import pyautogui
-import msvcrt
-import sys
 
 user32 = ctypes.WinDLL('user32', use_last_error=True)
 
@@ -89,44 +86,28 @@ def ReleaseKey(hexKeyCode):
 if __name__ == "__main__":
     # for i in range(100):
     while True:
-        # PressKey(0x005A)
-        # ReleaseKey(0x005A)
+        PressKey(0x005A)
+        ReleaseKey(0x005A)
         # z
 
-        # PressKey(0x0043)
-        # ReleaseKey(0x0043)
+        PressKey(0x0043)
+        ReleaseKey(0x0043)
         # c
 
-        # PressKey(0x0058)
-        # ReleaseKey(0x0058)
+        PressKey(0x0042)
+        ReleaseKey(0x0042)
+        # b
+
+        PressKey(0x0058)
+        ReleaseKey(0x0058)
         # x
 
-        # PressKey(0x0056)
-        # ReleaseKey(0x0056)
+        PressKey(0x0056)
+        ReleaseKey(0x0056)
         # v
-		
-        PressKey(0x0031)
-        ReleaseKey(0x0031)
-        pyautogui.click()
-        
-        PressKey(0x0032)
-        ReleaseKey(0x0032)
-        pyautogui.click()
-        
-        #PressKey(0x0033)
-        #ReleaseKey(0x0033)
-        #pyautogui.click()
-        
-        #PressKey(0x0034)
-        #ReleaseKey(0x0034)
-        #pyautogui.click()
-        
-        #PressKey(0x0035)
-        #ReleaseKey(0x0035)
-        #pyautogui.click()
 
-        # PressKey(0x0051)
-        # ReleaseKey(0x0051)
+        PressKey(0x0051)
+        ReleaseKey(0x0051)
         # q
 
-        time.sleep(0.001)
+        time.sleep(1)
